@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    vertical-align: middle;
+}
+.monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+    float: left;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/************* header ***************/
+header{
+    width:1200px;
+    margin:0 auto;
+}
+header nav > ul > li > a:hover{
+    color: #939393;
+    transition: 0.2s;
+}
+.top_area{
+    width:1200px;
+    overflow:hidden;
+    align-items:center;
+    padding: 20px 0;
+}
+.top_area,.mainlist ul{
+    max-width:1200px;
+    margin:0 auto;
+}
+.title{
+    float:left;
+    font-family: '', ;
+}
+
+
+.search{
+    float:left;
+    margin-left:160px;
+    margin-top:30px;
+}
+.search-container {
+    overflow:hidden;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 25px;
+    width: 300px;
+}
+.search-input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+.search-btn {
+    float:right;
+    margin-top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.login{
+    float:right;
+}
+.login li{
+    float:left;
+    list-style:none;
+    margin-left:15px;
+    padding-top: 15px;
+    font-size:13px;
+}
+
+.mainlist {
+    width:100%;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.mainlist ul{
+    width:1200px;
+    margin:0 auto;
+    padding:15px 0 15px 200px;
+    list-style:none;
+}
+.mainlist li{
+    padding: 15px;
+    display:inline-block;
+    margin-right:60px;
+}
+.mainlist a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.mainlist > ul > li > a:hover{
+    color: #939393;
+    transition: 0.2s;
+}
+/************* header 끝 ***************/
+
+
+
+/************ content 시작 **************/
+#content{
+    width:1200px;
+    margin:50px auto;
+}
+#content::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+.main_aside{
+    margin-top: 50px;
+    margin-left:-60px;
+    width:280px;
+    float:left;
+}
+.main_aside input{
+    display:none;
+}
+
+.btns label{
+    float: left;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #7e7e7e;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btns label:hover{
+    background: #111;
+    color:#fff;
+    transition: 0.3s;
+}
+.btns > label:first-child {
+    border-radius: 20px 0 0 0;
+    border-right: none;
+}
+.btns > label:last-child {
+    border-radius: 0 20px 0 0;
+}
+.btns p{
+    width:100px;
+    line-height:40px;
+    text-align:center;
+    border:1px solid #999;
+    float:left;
+}
+
+#front:checked ~ .recommend{
+    display:block;
+}
+#back:checked ~ .best{
+    display:block;
+}
+
+.tab_item{
+    display:none;
+    width: 200px;
+    clear:both;
+    border:1px solid #999;
+    border-radius: 0 0 20px 20px;
+    border-top:none;
+    box-sizing:border-box;
+}
+.tab_item li{
+    overflow: hidden;
+    list-style:none;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+.tab_item img{
+    width:50px;
+    height: auto;
+}
+.tab_item figure{
+    float:left;
+    margin-right:10px;
+}
+.tab_item .text{
+    margin-top: 10px;
+}
+.tab_item .text strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #222;
+}
+.tab_item .text p {
+    margin: 0;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 가운데 */
+
+.main_section{
+    width:600px;
+    float:left;
+    margin-left:50px;
+}
+.main_article img{
+    width:250px;
+    float:left;
+}
+.main_section h2{
+    margin-bottom: 30px;
+}
+.info{
+    width:300px;
+    float:left;
+    margin-left:40px;
+    margin-top:200px;
+}
+
+/* 오른쪽 */
+.serve_aside{
+    width:220px;
+    float:right;
+}
+.more{
+    text-align:right;
+    margin-bottom:20px;
+}
+.pl{
+    color: #8b8b8b;
+    margin-left: 140px;
+}
+.serve_aside img{
+    width:100px;
+    margin-top: 200px;
+}
+.serve_aside img:first-of-type{
+    margin-right:10px;
+}
+
+
+/* 섹션 */
+.contents{
+    margin:50px auto;
+    margin-top: 120px;
+}
+.contents > div{
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.contents > div, .contents > ul{
+    width:1200px;
+    margin:0 auto;
+}
+.contents h2{
+    padding-left: 47px;
+    float:left;
+    margin:0;
+    margin-bottom: 50px;
+}
+.contents .pl{
+    float:right;
+    margin:0;
+}
+.book{
+    width:1200px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+.book li{
+    float:left;
+    width:240px;
+    text-align:center;
+    margin-bottom:30px;
+}
+.book img{
+    width:150px;
+    height:220px;
+    border:1px solid #ddd;
+}
+.book p{
+    margin-top:10px;
+    font-size:14px;
+    color:#333;
+}
+.book a{
+    text-decoration:none;
+    color:#333;
+}
+
+.con1, .con2{
+    margin-bottom:90px;
+}
+.con1, .con3{
+    background:#f7f7f7;
+    padding:60px 0;
+}
+
+
+footer{
+    clear:both;
+    padding:40px 0;
+    margin-left: 500px;
+}
+.footer_wrap{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.footer_logo{
+    float:left;
+    font-size:40px;
+    margin-right:20px;
+}
+.address{
+    float:left;
+    font-size:11px;
+    color:#8f8e8e;
+    line-height:1.8;
+}
+/************* content 끝 ***************/

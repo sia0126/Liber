@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Hurricane&family=Mea+Culpa&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <header>
+        <div class="top_area">
+            <div class="monsieur-la-doulaise-regular">
+                <h1>Liber</h1>
+            </div>
+
+            <div class="search">
+                <form action="/search" method="GET" class="search-container">
+                <input type="text" name="query" class="search-input" placeholder="검색어를 입력하세요">
+                <button type="submit" class="search-btn"><img src="img/search.png" alt="search" class="search-icon"></button>
+                </form>
+            </div>
+
+            <nav class="login">
+                <ul>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+            <nav class="mainlist">
+                <ul>
+                    <li><a href="#">국내도서</a></li>
+                    <li><a href="#">외국도서</a></li>
+                    <li><a href="#">중고샵</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">신상품</a></li>
+                </ul>
+            </nav>
+
+
+<!---------- content 시작 ------------->
+    <div id="content">
+        <!-- 왼쪽 -->
+        <aside class="main_aside">
+            <input type="radio" name="tab" id="front" checked>
+            <input type="radio" name="tab" id="back">
+            <div class="btns">
+                <label for="front">추천</label>
+                <label for="back">베스트</label>
+            </div>
+
+            <div class="tab_item recommend">
+                <ul>
+                    <li>
+                        <figure><img src="img/aside/1.jpg" alt=""></figure>
+                        <div class="text">
+                            <strong>[국내도서] 윤슬의 바다</strong>
+                            <p>백은별 소설 | 양장본 HardCover</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/aside/2.jpg" alt=""></figure>
+                        <div class="text">
+                            <strong>[국내도서] 사랑과 멸종을 바꿔 읽어보십시오</strong>
+                            <p>윤선혜 | 문학과지성 시인선 608</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/aside/3.jpg" alt=""></figure>
+                        <div class="text">
+                            <strong>토마토 컵라면(스페셜 에디션)</strong>
+                            <p>차정은 시/에세이 | 부크크(Bookk)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_item best">
+                <ul>
+                    <li>
+                        <figure><img src="img/aside/4.jpg" alt=""></figure>
+                        <div class="text">
+                            <strong>[국내도서] 물고기는 존재하지 않는다</strong>
+                            <p>룰루 밀러 | 곰출판</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/aside/5.jpg" alt=""></figure>
+                        <div class="text">
+                            <strong>[국내도서] 여름을 한 입 베어 물었더니</strong>
+                            <p>이꽃님 | 문학동네 청소년 66</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/aside/6.jpg" alt=""></figure>
+                        <div class="text">
+                            <strong>[국내도서] 절창</strong>
+                            <p>구병모 | 문학동네</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 가운데 -->
+        <section class="main_section">
+            <h2>오늘의 추천</h2>
+            <article class="main_article">
+                <img src="img/mainCover/1.jpg" alt="고래">
+                <div class="info">
+                    <h3>[국내도서] 고래</h3>
+                    <h4>“한 번도 이렇게 전개되는 플롯을 읽어본 적이 없을 것”</h4>
+                    <p>2023년 인터내셔널 부커상 최종 후보에 선정</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- 오른쪽 -->
+        <aside class="serve_aside">
+            <p class="pl"><a href="#">+ 더보기</a></p>
+            <div class="sub_books">
+                <img src="img/mainCover/2.jpg" alt="서브1">
+                <img src="img/mainCover/3.jpg" alt="서브2">
+            </div>
+        </aside>
+    </div>
+
+
+    <!-- 베스트셀러 -->
+    <section class="contents con1">
+        <div>
+            <h2>베스트셀러</h2>
+            <p class="pl"><a href="#">+ 더보기</a></p>
+        </div>
+        <ul class="book">
+            <li>
+                <a href="#">
+                    <img src="img/cover1/1.jpg" alt="책1">
+                    <p>프로젝트 헤일메리</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/2.jpg" alt="책2">
+                    <p>싯다르타</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/3.jpg" alt="책3">
+                    <p>안녕이라 그랬어</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/4.jpg" alt="책4">
+                    <p>모순</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/5.jpg" alt="책5">
+                    <p>자몽살구클럽</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/6.jpg" alt="책6">
+                    <p>혼모노</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/7.jpg" alt="책7">
+                    <p>급류</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/8.jpg" alt="책8">
+                    <p>브람스를 좋아하세요...</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/9.jpg" alt="책9">
+                    <p>행복할 거야 이래도 되나 싶을 정도로</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover1/10.jpg" alt="책10">
+                    <p>괴테는 모든 것을 말했다</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- AI 추천 -->
+    <section class="contents con2">
+        <div>
+            <h2>AI 추천</h2>
+            <p class="pl"><a href="#">+ 더보기</a></p>
+        </div>
+        <ul class="book">
+            <li>
+                <a href="#">
+                    <img src="img/cover2/1.jpg" alt="책1">
+                    <p>노르웨이의 숲</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/2.jpg" alt="책2">
+                    <p>참을 수 없는 가벼움</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/3.jpg" alt="책3">
+                    <p>지구 끝의 온실</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/4.jpg" alt="책4">
+                    <p>희망</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/5.jpg" alt="책5">
+                    <p>나는 소망한다 내게 금지된 것을</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/6.jpg" alt="책6">
+                    <p>왜 나는 너를 사랑하는가</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/7.jpg" alt="책7">
+                    <p>파반느</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/8.jpg" alt="책8">
+                    <p>사탄탱고</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/9.jpg" alt="책9">
+                    <p>0000</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover2/10.jpg" alt="책10">
+                    <p>가공범</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 세계문학전집 -->
+    <section class="contents con3">
+        <div>
+            <h2>세계문학전집</h2>
+            <p class="pl"><a href="#">+ 더보기</a></p>
+        </div>
+        <ul class="book">
+            <li>
+                <a href="#">
+                    <img src="img/cover3/1.jpg" alt="책1">
+                    <p>인간실격</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/2.jpg" alt="책2">
+                    <p>데미안</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/3.jpg" alt="책3">
+                    <p>이방인</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/4.jpg" alt="책4">
+                    <p>1984</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/5.jpg" alt="책5">
+                    <p>동물농장</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/6.jpg" alt="책6">
+                    <p>오만과 편견</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/7.jpg" alt="책7">
+                    <p>면도날</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/8.jpg" alt="책8">
+                    <p>호밀밭의 파수꾼</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/9.jpg" alt="책9">
+                    <p>무진기행</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cover3/10.jpg" alt="책10">
+                    <p>여름</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+<!---------- content 끝 ------------->
+
+<footer>
+    <div class="footer_wrap">
+        <div class="footer_logo monsieur-la-doulaise-regular">
+            Liber
+        </div>
+        <div class="address">
+            주식회사 | 대표 : 박민수 | 사업자 등록 번호 : 987-65-4321 |
+            통신판매업 신고 : 4613-한국-167호 | 개인정보보호<br>
+            주소 : 서울특별시 대한구 민국동 123-1<br>
+            Copyright &copy;09WOMEN All Rights Reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
